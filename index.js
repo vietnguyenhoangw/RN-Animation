@@ -3,7 +3,7 @@
  */
 
 import {AppRegistry} from 'react-native';
-import Home from './Apps/Index';
+import AnimationWithXY from './Apps/AnimationWithXY';
 import {name as appName} from './app.json';
 
-AppRegistry.registerComponent(appName, () => Home);
+AppRegistry.registerComponent(appName, () => AnimationWithXY);
