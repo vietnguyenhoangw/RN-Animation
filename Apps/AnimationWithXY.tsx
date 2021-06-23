@@ -58,7 +58,14 @@ function AnimationWithXY() {
     });
   };
 
-  const onClickCenter = () => {};
+  const onClickCenter = () => {
+    Animated.parallel([
+      Animated.timing(translateXY, {
+        toValue: {x: width / 2, y: height / 2},
+        useNativeDriver: true,
+      }),
+    ]).start();
+  };
 
   const onClickSpin = () => {};
 
